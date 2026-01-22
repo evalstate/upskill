@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "model": "minimax",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_28",
+    "run_number": 4,
+    "timestamp": "2026-01-22T14:30:11.326095"
+  },
+  "stats": {
+    "conversation_span_ms": 72717.5,
+    "llm_time_ms": 72715.56,
+    "tool_time_ms": 1.9400000000023283,
+    "turns": 5,
+    "tool_calls": 3,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 3,
+    "tool_call_map": {
+      "read_skill": 3
+    },
+    "tool_error_map": {},
+    "input_tokens": 15754,
+    "output_tokens": 3332,
+    "total_tokens": 19086,
+    "usage_summaries": [
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1765,
+        "cumulative_output_tokens": 210,
+        "cumulative_billing_tokens": 1975,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1975,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.974096433080808,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1765
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4076,
+        "cumulative_output_tokens": 731,
+        "cumulative_billing_tokens": 4807,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2832,
+        "context_window_size": 202752,
+        "context_usage_percentage": 1.396780303030303,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4076
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1768,
+        "cumulative_output_tokens": 477,
+        "cumulative_billing_tokens": 2245,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 0,
+        "current_context_tokens": 2245,
+        "context_window_size": 202752,
+        "context_usage_percentage": 1.1072640467171717,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1768
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1765,
+        "cumulative_output_tokens": 101,
+        "cumulative_billing_tokens": 1866,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1866,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.9203361742424242,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1765
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4073,
+        "cumulative_output_tokens": 567,
+        "cumulative_billing_tokens": 4640,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2774,
+        "context_window_size": 202752,
+        "context_usage_percentage": 1.368173926767677,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4073
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1763,
+        "cumulative_output_tokens": 642,
+        "cumulative_billing_tokens": 2405,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 0,
+        "current_context_tokens": 2405,
+        "context_window_size": 202752,
+        "context_usage_percentage": 1.1861781881313131,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 255,
+        "cache_hit_rate_percent": 12.636273538156589,
+        "cumulative_effective_input_tokens": 1508
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1764,
+        "cumulative_output_tokens": 228,
+        "cumulative_billing_tokens": 1992,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1992,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.9824810606060606,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1764
+      },
+      {
+        "model": "MiniMaxAI/MiniMax-M2.1",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4074,
+        "cumulative_output_tokens": 915,
+        "cumulative_billing_tokens": 4989,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2997,
+        "context_window_size": 202752,
+        "context_usage_percentage": 1.4781605113636365,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4074
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 91712.557047514,
+        "end_time": 91717.236208412,
+        "duration_ms": 4679.16
+      },
+      {
+        "start_time": 91717.236831713,
+        "end_time": 91729.827631677,
+        "duration_ms": 12590.8
+      },
+      {
+        "start_time": 91712.571053713,
+        "end_time": 91721.608492177,
+        "duration_ms": 9037.44
+      },
+      {
+        "start_time": 91712.584875356,
+        "end_time": 91715.823339712,
+        "duration_ms": 3238.46
+      },
+      {
+        "start_time": 91715.824000061,
+        "end_time": 91724.986537604,
+        "duration_ms": 9162.54
+      },
+      {
+        "start_time": 91712.598689337,
+        "end_time": 91726.967246563,
+        "duration_ms": 14368.56
+      },
+      {
+        "start_time": 91712.612830648,
+        "end_time": 91717.504622785,
+        "duration_ms": 4891.79
+      },
+      {
+        "start_time": 91717.505276283,
+        "end_time": 91732.25208585,
+        "duration_ms": 14746.81
+      }
+    ]
+  },
+  "passed": false,
+  "assertions_passed": 4,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "with_skill",
+  "skill_name": "write-good-pull-request"
+}

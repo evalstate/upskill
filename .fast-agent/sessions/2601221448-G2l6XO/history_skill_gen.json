@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Create a skill document that teaches an AI agent how to: write an excellent PR for a standardized protocol"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "---\nname: write-protocol-pull-request\ndescription: Create comprehensive pull requests for protocol specifications with clear rationale and implementation details.\n---\n\n# Writing Excellent Protocol PRs\n\n## Overview\n\nPull requests for protocol specifications require special attention to detail, as they define how systems will communicate. A well-crafted protocol PR includes thorough documentation, clear motivation, and comprehensive test coverage.\n\n## PR Structure\n\n### 1. Title Format\n```\n[RFC] <Protocol Name> - <Brief Description>\n```\nExample: `[RFC] OAuth 2.0 - Add PKCE Extension Support`\n\n### 2. Description Template\n```markdown\n## Summary\nBrief overview of the protocol change (2-3 sentences)\n\n## Motivation\nWhy is this protocol needed? What problem does it solve?\n\n## Specification\nLink to specification document or include relevant sections\n\n## Breaking Changes\nList any breaking changes and migration path\n\n## Implementation Details\nKey implementation considerations and constraints\n\n## Testing\nHow was this protocol tested? Include test vectors if applicable\n```\n\n## Key Components\n\n### Protocol Documentation\nInclude a `protocol.md` file with:\n- Protocol version and date\n- Message formats with examples\n- State machine diagrams\n- Security considerations\n- Error handling specifications\n\n### Test Vectors\nCreate `test_vectors.json`:\n```json\n{\n  \"version\": \"1.0.0\",\n  \"test_cases\": [\n    {\n      \"name\": \"valid_handshake\",\n      \"input\": {...},\n      \"expected\": {...}\n    }\n  ]\n}\n```\n\n### Reference Implementation\nProvide minimal working code:\n```python\nclass ProtocolHandler:\n    \"\"\"Reference implementation of the protocol.\"\"\"\n    \n    def __init__(self, config: ProtocolConfig):\n        self.config = config\n    \n    def handle_message(self, message: bytes) -> Response:\n        \"\"\"Process incoming protocol message.\"\"\"\n        # Implementation here\n        pass\n```\n\n## Best Practices\n\n- Include sequence diagrams for complex interactions\n- Specify exact byte layouts for binary protocols\n- Define timeouts and retry strategies\n- Document security considerations explicitly\n- Provide both positive and negative test cases\n- Include performance benchmarks if relevant\n\n## Common Pitfalls\n\n- **Vague specifications**: Be explicit about message ordering and state transitions\n- **Missing edge cases**: Document behavior for malformed messages\n- **No upgrade path**: Plan for protocol versioning from the start\n- **Insufficient testing**: Include fuzz testing for robustness\n- **Security oversights**: Always include threat model analysis"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 92808.15313555, \"end_time\": 92810.444114808, \"duration_ms\": 2290.98}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"input_tokens\": 1478, \"output_tokens\": 500, \"total_tokens\": 1978, \"timestamp\": 1769093299.1657903, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1280, \"total_cache_tokens\": 1280, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1978, \"effective_input_tokens\": 198, \"display_input_tokens\": 1478}, \"raw_usage\": {\"completion_tokens\": 500, \"prompt_tokens\": 1478, \"total_tokens\": 1978, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 1280}, \"queue_time\": 0.059364808, \"prompt_time\": 0.020961092, \"completion_time\": 1.857799586, \"total_time\": 1.878760678}, \"summary\": {\"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"turn_count\": 1, \"cumulative_input_tokens\": 1478, \"cumulative_output_tokens\": 500, \"cumulative_billing_tokens\": 1978, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 1978, \"context_window_size\": 262144, \"context_usage_percentage\": 0.754547119140625, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1280, \"cache_hit_rate_percent\": 46.410442349528644, \"cumulative_effective_input_tokens\": 198}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

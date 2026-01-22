@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "model": "sonnet",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_31",
+    "run_number": 4,
+    "timestamp": "2026-01-22T14:33:20.343900"
+  },
+  "stats": {
+    "conversation_span_ms": 95706.16,
+    "llm_time_ms": 95702.35999999999,
+    "tool_time_ms": 3.8000000000029104,
+    "turns": 5,
+    "tool_calls": 13,
+    "tool_errors": 13,
+    "mcp_calls": 0,
+    "execute_calls": 13,
+    "tool_call_map": {
+      "read_skill": 13
+    },
+    "tool_error_map": {
+      "read_skill": 13
+    },
+    "input_tokens": 5093,
+    "output_tokens": 4028,
+    "total_tokens": 9121,
+    "usage_summaries": [
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1889,
+        "cumulative_output_tokens": 245,
+        "cumulative_billing_tokens": 2134,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2134,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.0670000000000002,
+        "cumulative_cache_read_tokens": 1555,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 45.15098722415796,
+        "cumulative_effective_input_tokens": 334
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4173,
+        "cumulative_output_tokens": 840,
+        "cumulative_billing_tokens": 5013,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2879,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.4395,
+        "cumulative_cache_read_tokens": 3110,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 42.702183166277635,
+        "cumulative_effective_input_tokens": 1063
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1895,
+        "cumulative_output_tokens": 240,
+        "cumulative_billing_tokens": 2135,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2135,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.0675000000000001,
+        "cumulative_cache_read_tokens": 1555,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 45.072463768115945,
+        "cumulative_effective_input_tokens": 340
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4185,
+        "cumulative_output_tokens": 849,
+        "cumulative_billing_tokens": 5034,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2899,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.4495,
+        "cumulative_cache_read_tokens": 3110,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 42.63193968471556,
+        "cumulative_effective_input_tokens": 1075
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1893,
+        "cumulative_output_tokens": 243,
+        "cumulative_billing_tokens": 2136,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2136,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.068,
+        "cumulative_cache_read_tokens": 1555,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 45.09860788863109,
+        "cumulative_effective_input_tokens": 338
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4181,
+        "cumulative_output_tokens": 923,
+        "cumulative_billing_tokens": 5104,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2968,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.484,
+        "cumulative_cache_read_tokens": 3110,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 42.65532848717597,
+        "cumulative_effective_input_tokens": 1071
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1891,
+        "cumulative_output_tokens": 116,
+        "cumulative_billing_tokens": 2007,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2007,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.0035,
+        "cumulative_cache_read_tokens": 1555,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 45.12478235635519,
+        "cumulative_effective_input_tokens": 336
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 3919,
+        "cumulative_output_tokens": 509,
+        "cumulative_billing_tokens": 4428,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2421,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.2105,
+        "cumulative_cache_read_tokens": 3110,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 44.245269597382276,
+        "cumulative_effective_input_tokens": 809
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1895,
+        "cumulative_output_tokens": 237,
+        "cumulative_billing_tokens": 2132,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2132,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.0659999999999998,
+        "cumulative_cache_read_tokens": 1555,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 45.072463768115945,
+        "cumulative_effective_input_tokens": 340
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4185,
+        "cumulative_output_tokens": 907,
+        "cumulative_billing_tokens": 5092,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2960,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.48,
+        "cumulative_cache_read_tokens": 3110,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 42.63193968471556,
+        "cumulative_effective_input_tokens": 1075
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 91880.261619146,
+        "end_time": 91884.337819352,
+        "duration_ms": 4076.2
+      },
+      {
+        "start_time": 91884.338601645,
+        "end_time": 91899.735159661,
+        "duration_ms": 15396.56
+      },
+      {
+        "start_time": 91880.277098317,
+        "end_time": 91884.144097526,
+        "duration_ms": 3867.0
+      },
+      {
+        "start_time": 91884.144941442,
+        "end_time": 91900.295983342,
+        "duration_ms": 16151.04
+      },
+      {
+        "start_time": 91880.292547864,
+        "end_time": 91884.304193758,
+        "duration_ms": 4011.65
+      },
+      {
+        "start_time": 91884.304943713,
+        "end_time": 91901.623883558,
+        "duration_ms": 17318.94
+      },
+      {
+        "start_time": 91880.307632525,
+        "end_time": 91883.506469748,
+        "duration_ms": 3198.84
+      },
+      {
+        "start_time": 91883.507074343,
+        "end_time": 91894.19588905,
+        "duration_ms": 10688.81
+      },
+      {
+        "start_time": 91880.322107842,
+        "end_time": 91884.281382079,
+        "duration_ms": 3959.27
+      },
+      {
+        "start_time": 91884.282179378,
+        "end_time": 91901.316233134,
+        "duration_ms": 17034.05
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "with_skill",
+  "skill_name": "good-pull-request"
+}

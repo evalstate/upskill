@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "kimi",
+    "generated_at": "2026-01-22T14:42:43.020821Z",
+    "source_task": "write an excellent PR for a standardized protocol",
+    "test_pass_rate": 1.0,
+    "license": null,
+    "compatibility": null
+  },
+  "tests": []
+}

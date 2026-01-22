@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Create a skill document that teaches an AI agent how to: write an excellent PR for a standardized protocol"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "---\nname: write-protocol-pull-request\ndescription: Create comprehensive, well-structured pull requests for protocol specifications and standards.\n---\n\n# Writing Excellent Protocol PRs\n\n## Overview\n\nWriting pull requests for protocol specifications requires precision, clarity, and comprehensive documentation. This guide covers how to create PRs that facilitate effective review and implementation of standardized protocols.\n\n## PR Structure\n\n### Title Format\n```\n<protocol-name>: <brief-description>\n```\n\nExamples:\n- `HTTP/3: Add QUIC connection migration support`\n- `WebSocket: Clarify frame masking requirements`\n- `OAuth 2.0: Define PKCE for public clients`\n\n### PR Description Template\n\n```markdown\n## Summary\nBrief overview (2-3 sentences) of the protocol change.\n\n## Motivation\nExplain why this change is necessary. Include:\n- Problem statement\n- Use cases\n- Security implications\n\n## Specification Changes\n- [ ] Added new section X.Y\n- [ ] Modified requirement in section A.B\n- [ ] Deprecated feature Z\n\n## Compatibility\n- [ ] Backward compatible\n- [ ] Breaking change (justify below)\n- [ ] Optional extension\n\n## Implementation Impact\n- Reference implementations affected\n- Testing requirements\n- Performance considerations\n\n## Verification\n- [ ] Examples provided\n- [ ] Test vectors included\n- [ ] Security review completed\n```\n\n## Key Sections to Include\n\n### 1. Protocol Diagrams\nInclude ASCII or Mermaid diagrams for:\n- Protocol flow\n- Message format\n- State machines\n\n```mermaid\nsequenceDiagram\n    Client->>Server: CONNECT\n    Server->>Client: CONNACK\n    Client->>Server: PUBLISH\n    Server->>Client: PUBACK\n```\n\n### 2. Formal Specification\nUse precise language with RFC keywords:\n- **MUST** - Absolute requirement\n- **SHOULD** - Recommended but not required\n- **MAY** - Optional feature\n\n### 3. Test Vectors\nProvide concrete examples with expected inputs/outputs:\n```json\n{\n  \"input\": \"0x01020304\",\n  \"expected\": \"0x10203050\",\n  \"description\": \"Test vector for checksum algorithm\"\n}\n```\n\n## Review Checklist\n\nBefore submitting:\n- [ ] All sections completed\n- [ ] Examples validated\n- [ ] Security implications assessed\n- [ ] Backward compatibility addressed\n- [ ] Related issues referenced\n- [ ] Implementation guidance provided\n\n## Common Pitfalls\n\n- **Vague requirements** - Always specify exact byte layouts\n- **Missing edge cases** - Document timeout, error, and recovery behaviors\n- **Inconsistent terminology** - Maintain consistent naming throughout\n- **Insufficient examples** - Provide at least one complete example per new feature"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 92480.575715675, \"end_time\": 92483.052994167, \"duration_ms\": 2477.28}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"input_tokens\": 1478, \"output_tokens\": 562, \"total_tokens\": 2040, \"timestamp\": 1769092963.0103185, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1280, \"total_cache_tokens\": 1280, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2040, \"effective_input_tokens\": 198, \"display_input_tokens\": 1478}, \"raw_usage\": {\"completion_tokens\": 562, \"prompt_tokens\": 1478, \"total_tokens\": 2040, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 1280}, \"queue_time\": 0.063492666, \"prompt_time\": 0.028012871, \"completion_time\": 2.06297126, \"total_time\": 2.090984131}, \"summary\": {\"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"turn_count\": 1, \"cumulative_input_tokens\": 1478, \"cumulative_output_tokens\": 562, \"cumulative_billing_tokens\": 2040, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 2040, \"context_window_size\": 262144, \"context_usage_percentage\": 0.7781982421875, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1280, \"cache_hit_rate_percent\": 46.410442349528644, \"cumulative_effective_input_tokens\": 198}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

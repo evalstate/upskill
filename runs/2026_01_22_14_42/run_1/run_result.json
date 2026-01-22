@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model": "kimi",
+    "task": "write an excellent PR for a standardized protocol",
+    "batch_id": "2026_01_22_14_42",
+    "run_number": 1,
+    "timestamp": "2026-01-22T14:43:46.074629"
+  },
+  "stats": {
+    "conversation_span_ms": 84994.66,
+    "llm_time_ms": 84990.43,
+    "tool_time_ms": 4.2299999999959255,
+    "turns": 5,
+    "tool_calls": 10,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 10,
+    "tool_call_map": {
+      "read_skill": 10
+    },
+    "tool_error_map": {},
+    "input_tokens": 20420,
+    "output_tokens": 9233,
+    "total_tokens": 29653,
+    "usage_summaries": [
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 993,
+        "cumulative_output_tokens": 183,
+        "cumulative_billing_tokens": 1176,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1176,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.588,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 993
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4086,
+        "cumulative_output_tokens": 1123,
+        "cumulative_billing_tokens": 5209,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 4033,
+        "context_window_size": 200000,
+        "context_usage_percentage": 2.0164999999999997,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4086
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 993,
+        "cumulative_output_tokens": 181,
+        "cumulative_billing_tokens": 1174,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1174,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.587,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 993
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4086,
+        "cumulative_output_tokens": 2662,
+        "cumulative_billing_tokens": 6748,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 5574,
+        "context_window_size": 200000,
+        "context_usage_percentage": 2.787,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4086
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 989,
+        "cumulative_output_tokens": 176,
+        "cumulative_billing_tokens": 1165,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1165,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5825,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 989
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4078,
+        "cumulative_output_tokens": 2262,
+        "cumulative_billing_tokens": 6340,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 5175,
+        "context_window_size": 200000,
+        "context_usage_percentage": 2.5875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4078
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 995,
+        "cumulative_output_tokens": 183,
+        "cumulative_billing_tokens": 1178,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1178,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5890000000000001,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 995
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4090,
+        "cumulative_output_tokens": 892,
+        "cumulative_billing_tokens": 4982,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 3804,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.902,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4090
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 990,
+        "cumulative_output_tokens": 185,
+        "cumulative_billing_tokens": 1175,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1175,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 990
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4080,
+        "cumulative_output_tokens": 2294,
+        "cumulative_billing_tokens": 6374,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 5199,
+        "context_window_size": 200000,
+        "context_usage_percentage": 2.5995,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 4080
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 92520.573342603,
+        "end_time": 92522.453484475,
+        "duration_ms": 1880.14
+      },
+      {
+        "start_time": 92522.454355335,
+        "end_time": 92531.732855536,
+        "duration_ms": 9278.5
+      },
+      {
+        "start_time": 92520.58834006,
+        "end_time": 92522.556609882,
+        "duration_ms": 1968.27
+      },
+      {
+        "start_time": 92522.557419051,
+        "end_time": 92544.522963613,
+        "duration_ms": 21965.54
+      },
+      {
+        "start_time": 92520.604187012,
+        "end_time": 92522.882657147,
+        "duration_ms": 2278.47
+      },
+      {
+        "start_time": 92522.883536909,
+        "end_time": 92540.48537015,
+        "duration_ms": 17601.83
+      },
+      {
+        "start_time": 92520.620025369,
+        "end_time": 92522.900818733,
+        "duration_ms": 2280.79
+      },
+      {
+        "start_time": 92522.901576145,
+        "end_time": 92530.98415381,
+        "duration_ms": 8082.58
+      },
+      {
+        "start_time": 92520.635343859,
+        "end_time": 92522.001219821,
+        "duration_ms": 1365.88
+      },
+      {
+        "start_time": 92522.002140911,
+        "end_time": 92540.290566227,
+        "duration_ms": 18288.43
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 3,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "baseline",
+  "skill_name": "write-protocol-pull-request"
+}

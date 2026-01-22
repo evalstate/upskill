@@ -1,0 +1,15 @@
+{
+  "name": "2601221448-G2l6XO",
+  "created_at": "2026-01-22T14:48:19.168358",
+  "last_activity": "2026-01-22T14:48:19.173208",
+  "history_files": [
+    "history_skill_gen.json"
+  ],
+  "metadata": {
+    "agent_name": "skill_gen",
+    "last_history_by_agent": {
+      "skill_gen": "history_skill_gen.json"
+    },
+    "first_user_preview": "Create a skill document that t"
+  }
+}

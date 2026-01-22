@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "model": "gpt-oss",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_30",
+    "run_number": 3,
+    "timestamp": "2026-01-22T14:31:00.183776"
+  },
+  "stats": {
+    "conversation_span_ms": 8045.66,
+    "llm_time_ms": 8041.700000000001,
+    "tool_time_ms": 3.9599999999993543,
+    "turns": 5,
+    "tool_calls": 6,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 6,
+    "tool_call_map": {
+      "read_skill": 6
+    },
+    "tool_error_map": {},
+    "input_tokens": 14232,
+    "output_tokens": 3489,
+    "total_tokens": 17721,
+    "usage_summaries": [
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 509,
+        "cumulative_output_tokens": 291,
+        "cumulative_billing_tokens": 800,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 800,
+        "context_window_size": 131072,
+        "context_usage_percentage": 0.6103515625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 42.937219730941706,
+        "cumulative_effective_input_tokens": 126
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2580,
+        "cumulative_output_tokens": 982,
+        "cumulative_billing_tokens": 3562,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2762,
+        "context_window_size": 131072,
+        "context_usage_percentage": 2.10723876953125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 766,
+        "cache_hit_rate_percent": 22.893006575014944,
+        "cumulative_effective_input_tokens": 1814
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 512,
+        "cumulative_output_tokens": 231,
+        "cumulative_billing_tokens": 743,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 743,
+        "context_window_size": 131072,
+        "context_usage_percentage": 0.566864013671875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 42.79329608938547,
+        "cumulative_effective_input_tokens": 129
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1760,
+        "cumulative_output_tokens": 780,
+        "cumulative_billing_tokens": 2540,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1797,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.371002197265625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 766,
+        "cache_hit_rate_percent": 30.324623911322245,
+        "cumulative_effective_input_tokens": 994
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 508,
+        "cumulative_output_tokens": 224,
+        "cumulative_billing_tokens": 732,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 732,
+        "context_window_size": 131072,
+        "context_usage_percentage": 0.5584716796875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 42.98540965207632,
+        "cumulative_effective_input_tokens": 125
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1745,
+        "cumulative_output_tokens": 282,
+        "cumulative_billing_tokens": 2027,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1295,
+        "context_window_size": 131072,
+        "context_usage_percentage": 0.988006591796875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 766,
+        "cache_hit_rate_percent": 30.505774591796097,
+        "cumulative_effective_input_tokens": 979
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 3,
+        "cumulative_input_tokens": 4308,
+        "cumulative_output_tokens": 330,
+        "cumulative_billing_tokens": 4638,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 2611,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.992034912109375,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1917,
+        "cache_hit_rate_percent": 30.79518072289157,
+        "cumulative_effective_input_tokens": 2391
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 4,
+        "cumulative_input_tokens": 7433,
+        "cumulative_output_tokens": 570,
+        "cumulative_billing_tokens": 8003,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 3,
+        "current_context_tokens": 3365,
+        "context_window_size": 131072,
+        "context_usage_percentage": 2.567291259765625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 4220,
+        "cache_hit_rate_percent": 36.21385051059813,
+        "cumulative_effective_input_tokens": 3213
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 510,
+        "cumulative_output_tokens": 168,
+        "cumulative_billing_tokens": 678,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 678,
+        "context_window_size": 131072,
+        "context_usage_percentage": 0.51727294921875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 42.889137737961924,
+        "cumulative_effective_input_tokens": 127
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2459,
+        "cumulative_output_tokens": 1157,
+        "cumulative_billing_tokens": 3616,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2938,
+        "context_window_size": 131072,
+        "context_usage_percentage": 2.24151611328125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 766,
+        "cache_hit_rate_percent": 23.751937984496124,
+        "cumulative_effective_input_tokens": 1693
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 91794.870510879,
+        "end_time": 91795.707277976,
+        "duration_ms": 836.77
+      },
+      {
+        "start_time": 91795.707928539,
+        "end_time": 91796.723772881,
+        "duration_ms": 1015.84
+      },
+      {
+        "start_time": 91794.884569894,
+        "end_time": 91795.562759603,
+        "duration_ms": 678.19
+      },
+      {
+        "start_time": 91795.563389371,
+        "end_time": 91796.425772789,
+        "duration_ms": 862.38
+      },
+      {
+        "start_time": 91794.898727645,
+        "end_time": 91795.544622845,
+        "duration_ms": 645.9
+      },
+      {
+        "start_time": 91795.545239577,
+        "end_time": 91796.060167893,
+        "duration_ms": 514.93
+      },
+      {
+        "start_time": 91796.060889412,
+        "end_time": 91796.526331455,
+        "duration_ms": 465.44
+      },
+      {
+        "start_time": 91796.52706664,
+        "end_time": 91797.157928743,
+        "duration_ms": 630.86
+      },
+      {
+        "start_time": 91794.913633257,
+        "end_time": 91795.380768236,
+        "duration_ms": 467.13
+      },
+      {
+        "start_time": 91794.929031872,
+        "end_time": 91795.621576259,
+        "duration_ms": 692.54
+      },
+      {
+        "start_time": 91795.622177974,
+        "end_time": 91796.853898189,
+        "duration_ms": 1231.72
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 3,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "baseline",
+  "skill_name": "write-good-pr"
+}

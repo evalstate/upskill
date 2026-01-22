@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model": "kimi",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_21",
+    "run_number": 2,
+    "timestamp": "2026-01-22T14:22:55.613315"
+  },
+  "stats": {
+    "conversation_span_ms": 11163.51,
+    "llm_time_ms": 11160.36,
+    "tool_time_ms": 3.1499999999998636,
+    "turns": 5,
+    "tool_calls": 5,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 5,
+    "tool_call_map": {
+      "read_skill": 5
+    },
+    "tool_error_map": {},
+    "input_tokens": 13415,
+    "output_tokens": 1851,
+    "total_tokens": 15266,
+    "usage_summaries": [
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1088,
+        "cumulative_output_tokens": 33,
+        "cumulative_billing_tokens": 1121,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1121,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.4276275634765625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 256,
+        "cache_hit_rate_percent": 19.047619047619047,
+        "cumulative_effective_input_tokens": 832
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2687,
+        "cumulative_output_tokens": 406,
+        "cumulative_billing_tokens": 3093,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1972,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.75225830078125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1280,
+        "cache_hit_rate_percent": 32.26619611797328,
+        "cumulative_effective_input_tokens": 1407
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1088,
+        "cumulative_output_tokens": 33,
+        "cumulative_billing_tokens": 1121,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1121,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.4276275634765625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 512,
+        "cache_hit_rate_percent": 32.0,
+        "cumulative_effective_input_tokens": 576
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2687,
+        "cumulative_output_tokens": 283,
+        "cumulative_billing_tokens": 2970,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1849,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.7053375244140625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1536,
+        "cache_hit_rate_percent": 36.37224721761781,
+        "cumulative_effective_input_tokens": 1151
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1085,
+        "cumulative_output_tokens": 63,
+        "cumulative_billing_tokens": 1148,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1148,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.43792724609375,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 256,
+        "cache_hit_rate_percent": 19.09023117076808,
+        "cumulative_effective_input_tokens": 829
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2681,
+        "cumulative_output_tokens": 355,
+        "cumulative_billing_tokens": 3036,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1888,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.72021484375,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1280,
+        "cache_hit_rate_percent": 32.31507195152739,
+        "cumulative_effective_input_tokens": 1401
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1084,
+        "cumulative_output_tokens": 67,
+        "cumulative_billing_tokens": 1151,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1151,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.4390716552734375,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 256,
+        "cache_hit_rate_percent": 19.1044776119403,
+        "cumulative_effective_input_tokens": 828
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2679,
+        "cumulative_output_tokens": 463,
+        "cumulative_billing_tokens": 3142,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1991,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.7595062255859375,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1280,
+        "cache_hit_rate_percent": 32.33139681737813,
+        "cumulative_effective_input_tokens": 1399
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1085,
+        "cumulative_output_tokens": 33,
+        "cumulative_billing_tokens": 1118,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1118,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.426483154296875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 256,
+        "cache_hit_rate_percent": 19.09023117076808,
+        "cumulative_effective_input_tokens": 829
+      },
+      {
+        "model": "moonshotai/Kimi-K2-Instruct-0905",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2681,
+        "cumulative_output_tokens": 344,
+        "cumulative_billing_tokens": 3025,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1907,
+        "context_window_size": 262144,
+        "context_usage_percentage": 0.7274627685546875,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1280,
+        "cache_hit_rate_percent": 32.31507195152739,
+        "cumulative_effective_input_tokens": 1401
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 91255.563099373,
+        "end_time": 91256.176419808,
+        "duration_ms": 613.32
+      },
+      {
+        "start_time": 91256.17712721,
+        "end_time": 91258.024558739,
+        "duration_ms": 1847.43
+      },
+      {
+        "start_time": 91255.578342771,
+        "end_time": 91256.223715284,
+        "duration_ms": 645.37
+      },
+      {
+        "start_time": 91256.224308816,
+        "end_time": 91257.520060272,
+        "duration_ms": 1295.75
+      },
+      {
+        "start_time": 91255.593654733,
+        "end_time": 91256.350022853,
+        "duration_ms": 756.37
+      },
+      {
+        "start_time": 91256.350647806,
+        "end_time": 91257.732407347,
+        "duration_ms": 1381.76
+      },
+      {
+        "start_time": 91255.60873995,
+        "end_time": 91256.366196251,
+        "duration_ms": 757.46
+      },
+      {
+        "start_time": 91256.366776327,
+        "end_time": 91258.119337245,
+        "duration_ms": 1752.56
+      },
+      {
+        "start_time": 91255.623690146,
+        "end_time": 91256.202013665,
+        "duration_ms": 578.32
+      },
+      {
+        "start_time": 91256.202648656,
+        "end_time": 91257.734669907,
+        "duration_ms": 1532.02
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "with_skill",
+  "skill_name": "write-good-pr"
+}

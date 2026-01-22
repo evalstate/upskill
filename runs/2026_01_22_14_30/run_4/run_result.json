@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "model": "gpt-oss",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_30",
+    "run_number": 4,
+    "timestamp": "2026-01-22T14:31:00.185150"
+  },
+  "stats": {
+    "conversation_span_ms": 8102.33,
+    "llm_time_ms": 8101.15,
+    "tool_time_ms": 1.1799999999998363,
+    "turns": 5,
+    "tool_calls": 2,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 2,
+    "tool_call_map": {
+      "read_skill": 2
+    },
+    "tool_error_map": {},
+    "input_tokens": 13812,
+    "output_tokens": 3161,
+    "total_tokens": 16973,
+    "usage_summaries": [
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1790,
+        "cumulative_output_tokens": 138,
+        "cumulative_billing_tokens": 1928,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1928,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.470947265625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 17.625402669121033,
+        "cumulative_effective_input_tokens": 1407
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4223,
+        "cumulative_output_tokens": 650,
+        "cumulative_billing_tokens": 4873,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2945,
+        "context_window_size": 131072,
+        "context_usage_percentage": 2.246856689453125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1918,
+        "cache_hit_rate_percent": 31.232698257612768,
+        "cumulative_effective_input_tokens": 2305
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1793,
+        "cumulative_output_tokens": 300,
+        "cumulative_billing_tokens": 2093,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 0,
+        "current_context_tokens": 2093,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.596832275390625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 17.60110294117647,
+        "cumulative_effective_input_tokens": 1410
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1789,
+        "cumulative_output_tokens": 565,
+        "cumulative_billing_tokens": 2354,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 0,
+        "current_context_tokens": 2354,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.79595947265625,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 17.63351749539595,
+        "cumulative_effective_input_tokens": 1406
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1790,
+        "cumulative_output_tokens": 699,
+        "cumulative_billing_tokens": 2489,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 0,
+        "current_context_tokens": 2489,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.898956298828125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 17.625402669121033,
+        "cumulative_effective_input_tokens": 1407
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 1,
+        "cumulative_input_tokens": 1791,
+        "cumulative_output_tokens": 130,
+        "cumulative_billing_tokens": 1921,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1921,
+        "context_window_size": 131072,
+        "context_usage_percentage": 1.465606689453125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 383,
+        "cache_hit_rate_percent": 17.61729530818767,
+        "cumulative_effective_input_tokens": 1408
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "turn_count": 2,
+        "cumulative_input_tokens": 4217,
+        "cumulative_output_tokens": 947,
+        "cumulative_billing_tokens": 5164,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 3243,
+        "context_window_size": 131072,
+        "context_usage_percentage": 2.474212646484375,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 1918,
+        "cache_hit_rate_percent": 31.26324368378158,
+        "cumulative_effective_input_tokens": 2299
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 91792.720819843,
+        "end_time": 91793.73869789,
+        "duration_ms": 1017.88
+      },
+      {
+        "start_time": 91793.739306881,
+        "end_time": 91794.586344378,
+        "duration_ms": 847.04
+      },
+      {
+        "start_time": 91792.734750323,
+        "end_time": 91793.949776687,
+        "duration_ms": 1215.03
+      },
+      {
+        "start_time": 91792.749770764,
+        "end_time": 91794.363506463,
+        "duration_ms": 1613.74
+      },
+      {
+        "start_time": 91792.764937175,
+        "end_time": 91794.083133883,
+        "duration_ms": 1318.2
+      },
+      {
+        "start_time": 91792.77942539,
+        "end_time": 91793.977343872,
+        "duration_ms": 1197.92
+      },
+      {
+        "start_time": 91793.977928735,
+        "end_time": 91794.869267915,
+        "duration_ms": 891.34
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 4,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "with_skill",
+  "skill_name": "write-good-pr"
+}

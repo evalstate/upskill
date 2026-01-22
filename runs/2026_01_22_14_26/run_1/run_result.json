@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model": "glm",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_26",
+    "run_number": 1,
+    "timestamp": "2026-01-22T14:27:16.381460"
+  },
+  "stats": {
+    "conversation_span_ms": 19834.35,
+    "llm_time_ms": 19831.100000000002,
+    "tool_time_ms": 3.2499999999990905,
+    "turns": 5,
+    "tool_calls": 5,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 5,
+    "tool_call_map": {
+      "read_skill": 5
+    },
+    "tool_error_map": {},
+    "input_tokens": 7369,
+    "output_tokens": 4111,
+    "total_tokens": 11480,
+    "usage_summaries": [
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 1,
+        "cumulative_input_tokens": 472,
+        "cumulative_output_tokens": 147,
+        "cumulative_billing_tokens": 619,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 619,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.3052990845959596,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 472
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1471,
+        "cumulative_output_tokens": 806,
+        "cumulative_billing_tokens": 2277,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1658,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.8177477904040404,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1471
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 1,
+        "cumulative_input_tokens": 476,
+        "cumulative_output_tokens": 152,
+        "cumulative_billing_tokens": 628,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 628,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.309738005050505,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 476
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1479,
+        "cumulative_output_tokens": 656,
+        "cumulative_billing_tokens": 2135,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1507,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.7432725694444444,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1479
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 1,
+        "cumulative_input_tokens": 473,
+        "cumulative_output_tokens": 126,
+        "cumulative_billing_tokens": 599,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 599,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.2954348169191919,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 473
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1473,
+        "cumulative_output_tokens": 793,
+        "cumulative_billing_tokens": 2266,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1667,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.8221867108585859,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1473
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 1,
+        "cumulative_input_tokens": 473,
+        "cumulative_output_tokens": 137,
+        "cumulative_billing_tokens": 610,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 610,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.30086016414141414,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 473
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1473,
+        "cumulative_output_tokens": 820,
+        "cumulative_billing_tokens": 2293,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1683,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.830078125,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1473
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 1,
+        "cumulative_input_tokens": 473,
+        "cumulative_output_tokens": 129,
+        "cumulative_billing_tokens": 602,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 602,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.29691445707070707,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 473
+      },
+      {
+        "model": "zai-org/GLM-4.7",
+        "turn_count": 2,
+        "cumulative_input_tokens": 1473,
+        "cumulative_output_tokens": 1036,
+        "cumulative_billing_tokens": 2509,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1907,
+        "context_window_size": 202752,
+        "context_usage_percentage": 0.940557922979798,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 1473
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 91573.931892392,
+        "end_time": 91575.335703394,
+        "duration_ms": 1403.81
+      },
+      {
+        "start_time": 91575.336364781,
+        "end_time": 91577.564243068,
+        "duration_ms": 2227.88
+      },
+      {
+        "start_time": 91573.945125777,
+        "end_time": 91575.351449265,
+        "duration_ms": 1406.32
+      },
+      {
+        "start_time": 91575.352113904,
+        "end_time": 91577.301805833,
+        "duration_ms": 1949.69
+      },
+      {
+        "start_time": 91573.958333618,
+        "end_time": 91574.658822567,
+        "duration_ms": 700.49
+      },
+      {
+        "start_time": 91574.659471855,
+        "end_time": 91578.199980152,
+        "duration_ms": 3540.51
+      },
+      {
+        "start_time": 91573.97242465,
+        "end_time": 91575.281288419,
+        "duration_ms": 1308.86
+      },
+      {
+        "start_time": 91575.281883942,
+        "end_time": 91578.919102475,
+        "duration_ms": 3637.22
+      },
+      {
+        "start_time": 91573.986667877,
+        "end_time": 91574.839977323,
+        "duration_ms": 853.31
+      },
+      {
+        "start_time": 91574.840643915,
+        "end_time": 91577.643656179,
+        "duration_ms": 2803.01
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "baseline",
+  "skill_name": "write-pull-requests"
+}

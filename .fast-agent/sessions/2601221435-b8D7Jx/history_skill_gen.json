@@ -1,0 +1,45 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Create a skill document that teaches an AI agent how to: write an excellent PR for a standardized protocol"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "---\nname: write-excellent-pr-protocol\ndescription: Guide an AI to craft clear, thorough pull requests for standardized protocol changes\n---\n\n# Writing an Excellent Pull Request for a Standardized Protocol\n\n## Overview  \nPull requests (PRs) that modify a protocol specification must be precise, reproducible, and easy for reviewers to assess. This guide outlines the structure, content, and common checks to ensure a PR communicates *what* changed, *why* it changed, and *how* it has been validated against the protocol\u2019s standards.\n\n## Step\u2011by\u2011Step Instructions  \n\n1. **Title** \u2013 Use a concise, conventional format:  \n   ```\n   <type>(<module>): <short description>\n   ```  \n   *type*: `feat`, `fix`, `doc`, `refactor`, `test`.  \n   *module*: part of the protocol (e.g., `handshake`, `frame`, `error-codes`).  \n\n2. **Summary (Header)** \u2013 One\u2011paragraph overview answering:  \n   - What part of the spec is affected?  \n   - Why is the change needed (bug, new feature, clarification)?  \n\n3. **Detailed Description** \u2013 Include the following sections, each labelled with a heading:  \n   - **Background** \u2013 Link to the existing spec section, issue tracker, or external proposal.  \n   - **Change Summary** \u2013 Bullet list of modifications (e.g., \u201cAdd `0x1A` error code\u201d, \u201cRename `CONNECT` to `INIT`\u201d).  \n   - **Rationale** \u2013 Explain design decisions, compatibility impact, and any deprecation plan.  \n   - **Specification Diff** \u2013 Embed a markdown table or code block comparing old vs. new wording.  \n\n4. **Implementation Evidence** \u2013 Provide concrete artifacts:  \n   ```yaml\n   # Example: Updated protocol definition fragment\n   messages:\n     - name: INIT\n       id: 0x01\n       fields:\n         - { name: version, type: uint8 }\n   ```  \n\n5. **Testing & Validation** \u2013 List test suites run, sample packet captures, or conformance tool output. Include commands:  \n   ```bash\n   $ protocheck --spec new_spec.yaml --tests test_suite/\n   ```  \n\n6. **Documentation Updates** \u2013 Reference any README, changelog, or user\u2011guide sections updated.  \n\n7. **Checklist** \u2013 Tick required items before merging:  \n   - [ ] Title follows convention  \n   - [ ] All affected spec sections updated  \n   - [ ] Tests pass (`npm test`, `pytest`, etc.)  \n   - [ ] Reviewer tags added  \n\n## Example PR Skeleton  \n\n```markdown\nfeat(handshake): add optional TLS negotiation flag\n\n### Summary\nIntroduce `tls_negotiation` flag to the initial handshake allowing clients to\nopt\u2011in to TLS without a separate negotiation round.\n\n### Background\nCurrent spec \u00a72.1 requires a separate `TLS_START` message. This change aligns\nwith RFC\u202f8446 recommendations.\n\n### Change Summary\n- New boolean field `tls_negotiation` in `Handshake` message.\n- Updated state diagram to show optional TLS path.\n- Deprecated `TLS_START` message (will be removed in v2.0).\n\n### Specification Diff\n```diff\n- message Handshake {\n-   uint8 version;\n- }\n+ message Handshake {\n+   uint8 version;\n+   bool tls_negotiation = optional;\n+ }\n```\n\n### Testing\n```bash\nprotocheck --spec spec/v1.3.yaml --tests tests/handshake/\n```\n\nAll existing tests pass; new test `test_tls_flag.py` validates optional path.\n\n### Checklist\n- [x] Title follows convention\n- [x] Spec updated\n- [x] Tests added and passing\n- [x] Documentation links updated\n```\n\n## Best Practices & Pitfalls  \n\n- **Never merge without a diff view** \u2013 reviewers need a clear before/after.  \n- **Maintain backward compatibility** \u2013 explicitly state version bumps or deprecation schedules.  \n- **Avoid vague language** \u2013 use precise terminology from the spec glossary.  \n- **Provide reproducible test commands** \u2013 reviewers should be able to run them locally.  \n- **Limit scope** \u2013 a PR should address one logical change; split large updates into multiple PRs.  "
+        }
+      ],
+      "channels": {
+        "reasoning": [
+          {
+            "type": "text",
+            "text": "We need to generate a markdown skill document with frontmatter: name and description. Name: something like \"write-excellent-pr-protocol\". description: one sentence under 100 characters: \"Teach how to write a clear, thorough pull request for a standardized protocol.\" Provide a markdown guide 200-400 words. Must include overview, step-by-step, 2-3 code examples, best practices/pitfalls. Should be about writing an excellent PR for a standardized protocol (like a network protocol spec, API spec, etc.). Provide guidance on PR title, description, background, changes, testing, documentation, referencing spec, etc.\n\nMake sure word count between 200-400 words. Let's produce about 280 words.\n\nLet's produce frontmatter and markdown accordingly.\n\n"
+          }
+        ],
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 92068.362674031, \"end_time\": 92069.878076374, \"duration_ms\": 1515.4}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"openai/gpt-oss-120b\", \"input_tokens\": 1568, \"output_tokens\": 1054, \"total_tokens\": 2622, \"timestamp\": 1769092540.2451715, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 0, \"total_cache_tokens\": 0, \"has_cache_activity\": false}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2622, \"effective_input_tokens\": 1568, \"display_input_tokens\": 1568}, \"raw_usage\": {\"completion_tokens\": 1054, \"prompt_tokens\": 1568, \"total_tokens\": 2622, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": null, \"reasoning_tokens\": null, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 0}}, \"summary\": {\"model\": \"openai/gpt-oss-120b\", \"turn_count\": 1, \"cumulative_input_tokens\": 1568, \"cumulative_output_tokens\": 1054, \"cumulative_billing_tokens\": 2622, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 2622, \"context_window_size\": 131072, \"context_usage_percentage\": 2.00042724609375, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 0, \"cache_hit_rate_percent\": 0.0, \"cumulative_effective_input_tokens\": 1568}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

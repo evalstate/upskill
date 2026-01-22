@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_by": "gpt-oss",
+    "generated_at": "2026-01-22T14:35:40.254607Z",
+    "source_task": "write an excellent PR for a standardized protocol",
+    "test_pass_rate": 1.0,
+    "license": null,
+    "compatibility": null
+  },
+  "tests": []
+}

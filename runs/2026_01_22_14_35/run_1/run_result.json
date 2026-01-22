@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model": "gpt-oss",
+    "task": "write an excellent PR for a standardized protocol",
+    "batch_id": "2026_01_22_14_35",
+    "run_number": 1,
+    "timestamp": "2026-01-22T14:37:28.852367"
+  },
+  "stats": {
+    "conversation_span_ms": 99571.11,
+    "llm_time_ms": 99567.81999999999,
+    "tool_time_ms": 3.290000000008149,
+    "turns": 5,
+    "tool_calls": 5,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 5,
+    "tool_call_map": {
+      "read_skill": 5
+    },
+    "tool_error_map": {},
+    "input_tokens": 13770,
+    "output_tokens": 4312,
+    "total_tokens": 18082,
+    "usage_summaries": [
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 912,
+        "cumulative_output_tokens": 113,
+        "cumulative_billing_tokens": 1025,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1025,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5125000000000001,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 912
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2762,
+        "cumulative_output_tokens": 776,
+        "cumulative_billing_tokens": 3538,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2513,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.2565,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 2762
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 909,
+        "cumulative_output_tokens": 118,
+        "cumulative_billing_tokens": 1027,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1027,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5135,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 909
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2756,
+        "cumulative_output_tokens": 1027,
+        "cumulative_billing_tokens": 3783,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2756,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.3780000000000001,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 2756
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 905,
+        "cumulative_output_tokens": 120,
+        "cumulative_billing_tokens": 1025,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1025,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5125000000000001,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 905
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2748,
+        "cumulative_output_tokens": 946,
+        "cumulative_billing_tokens": 3694,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2669,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.3345,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 2748
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 906,
+        "cumulative_output_tokens": 114,
+        "cumulative_billing_tokens": 1020,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1020,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.51,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 906
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2750,
+        "cumulative_output_tokens": 706,
+        "cumulative_billing_tokens": 3456,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2436,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.218,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 2750
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 908,
+        "cumulative_output_tokens": 114,
+        "cumulative_billing_tokens": 1022,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 1022,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.511,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 908
+      },
+      {
+        "model": "claude-sonnet-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 2754,
+        "cumulative_output_tokens": 857,
+        "cumulative_billing_tokens": 3611,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 1,
+        "current_context_tokens": 2589,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.2945,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 2754
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 92152.873417166,
+        "end_time": 92155.669079574,
+        "duration_ms": 2795.66
+      },
+      {
+        "start_time": 92155.669655327,
+        "end_time": 92171.105883448,
+        "duration_ms": 15436.23
+      },
+      {
+        "start_time": 92152.88739045,
+        "end_time": 92155.88549682,
+        "duration_ms": 2998.11
+      },
+      {
+        "start_time": 92155.886262952,
+        "end_time": 92175.924472743,
+        "duration_ms": 20038.21
+      },
+      {
+        "start_time": 92152.902044469,
+        "end_time": 92155.616165176,
+        "duration_ms": 2714.12
+      },
+      {
+        "start_time": 92155.616885748,
+        "end_time": 92176.094840759,
+        "duration_ms": 20477.96
+      },
+      {
+        "start_time": 92152.916383293,
+        "end_time": 92155.725900492,
+        "duration_ms": 2809.52
+      },
+      {
+        "start_time": 92155.726510457,
+        "end_time": 92168.649082574,
+        "duration_ms": 12922.57
+      },
+      {
+        "start_time": 92152.930802329,
+        "end_time": 92155.527737002,
+        "duration_ms": 2596.93
+      },
+      {
+        "start_time": 92155.528356667,
+        "end_time": 92172.306866734,
+        "duration_ms": 16778.51
+      }
+    ]
+  },
+  "passed": true,
+  "assertions_passed": 3,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "baseline",
+  "skill_name": "write-excellent-pr-protocol"
+}
