@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Create a skill document that teaches an AI agent how to: write a good pr"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "---\nname: write-good-pull-request\ndescription: Create clear, comprehensive pull requests that facilitate effective code review.\n---\n\n# Writing Effective Pull Requests\n\n## Overview\n\nA well-crafted pull request (PR) accelerates code review, reduces back-and-forth discussions, and maintains project history. This guide covers the essential elements of creating PRs that reviewers appreciate.\n\n## PR Structure\n\n### Title Format\n```\n<type>: Brief description (50 chars max)\n```\n\nTypes: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`\n\n### Description Template\n```markdown\n## Summary\nBrief explanation of what changed and why.\n\n## Changes\n- Specific change 1\n- Specific change 2\n\n## Testing\n- [ ] Unit tests pass\n- [ ] Integration tests pass\n- [ ] Manual testing completed\n\n## Screenshots (if UI changes)\n// Before/after images\n\n## Related Issues\nCloses #123\n```\n\n## Best Practices\n\n### 1. Keep PRs Small\n- Focus on a single feature or fix\n- Maximum ~400 lines of changes\n- Split large refactors into multiple PRs\n\n### 2. Write Self-Review Comments\n```python\n# Added timeout to prevent hanging requests\nresponse = requests.get(url, timeout=30)\n```\n\n### 3. Update Documentation\n```markdown\n## API Changes\n- Added new endpoint `/api/v2/users`\n- Updated OpenAPI spec\n- Added example to README\n```\n\n### 4. Include Test Evidence\n```bash\n# Run tests and include output\npytest tests/test_new_feature.py -v\n=== 5 passed, 0 failed ===\n```\n\n## Reviewer Checklist\n\nBefore submitting, verify:\n- [ ] PR title follows convention\n- [ ] Description is complete\n- [ ] Tests are included\n- [ ] Documentation updated\n- [ ] No debugging code remains\n- [ ] Commit messages are clean\n\n## Common Mistakes to Avoid\n\n- **Vague titles**: \"Fix bug\" \u2192 \"Fix null pointer in user service\"\n- **Missing context**: Always explain the problem being solved\n- **Large PRs**: Break into smaller, reviewable chunks\n- **No test plan**: Always specify how changes were tested"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 91076.937299624, \"end_time\": 91079.191958018, \"duration_ms\": 2254.66}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"input_tokens\": 1474, \"output_tokens\": 463, \"total_tokens\": 1937, \"timestamp\": 1769091525.0107791, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1280, \"total_cache_tokens\": 1280, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1937, \"effective_input_tokens\": 194, \"display_input_tokens\": 1474}, \"raw_usage\": {\"completion_tokens\": 463, \"prompt_tokens\": 1474, \"total_tokens\": 1937, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 1280}, \"queue_time\": 0.063882144, \"prompt_time\": 0.027853727, \"completion_time\": 1.736688792, \"total_time\": 1.764542519}, \"summary\": {\"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"turn_count\": 1, \"cumulative_input_tokens\": 1474, \"cumulative_output_tokens\": 463, \"cumulative_billing_tokens\": 1937, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 1937, \"context_window_size\": 262144, \"context_usage_percentage\": 0.7389068603515625, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1280, \"cache_hit_rate_percent\": 46.477850399419026, \"cumulative_effective_input_tokens\": 194}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

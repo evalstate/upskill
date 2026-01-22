@@ -124,7 +124,9 @@ async def _run_test_with_evaluator(
         try:
             clone = await evaluator.spawn_detached_instance(name=instance_name)
             
-            if instruction:
+            if instruction is None:
+                clone.set_instruction("")
+            else:
                 clone.set_instruction(instruction)
             output = await clone.send(user_content)
             stats = ConversationStats()
@@ -257,7 +259,9 @@ async def evaluate_skill(
     )
 
     # Run baseline if requested
+    print("**************BASELINE")
     if run_baseline:
+        print("**************BASELINE RUNNING")
         results.baseline_results = await _run_batch(None, "baseline")
 
         successes = sum(1 for r in results.baseline_results if r.success)

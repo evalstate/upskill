@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Create a skill document that teaches an AI agent how to: write a good pr"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "---\nname: write-good-pr\ndescription: Create clear, effective pull requests that facilitate code review and project maintenance.\n---\n\n# Writing Effective Pull Requests\n\n## Overview\n\nA well-crafted pull request (PR) is essential for smooth code review and project maintenance. It should clearly communicate what changed, why it changed, and how to test it.\n\n## Key Components\n\n### 1. Descriptive Title\n- Use present tense (\"Add feature\" not \"Added feature\")\n- Keep it under 50 characters when possible\n- Include ticket/issue numbers when applicable\n\n### 2. Clear Description\n- Explain what problem this PR solves\n- Provide context for reviewers\n- Include screenshots/GIFs for UI changes\n- Reference related issues\n\n### 3. Testing Instructions\n- List steps to test the changes\n- Include test cases if applicable\n- Note any edge cases to verify\n\n## Template Example\n\n```markdown\n## Summary\nBrief description of what this PR does (1-2 sentences).\n\n## Changes\n- List of key changes made\n- Another change\n- Third change\n\n## Testing\n1. Step 1 to test\n2. Step 2 to test\n3. Expected result\n\n## Screenshots\n(if UI changes)\n\n## Related Issues\nCloses #123\n```\n\n## Best Practices\n\n### Small, Focused PRs\n```bash\n# Good: Focused change\nfeat: add user profile page\n\n# Bad: Too many unrelated changes\nfeat: add user profile, fix navbar, update dependencies\n```\n\n### Clear Commit History\n```bash\n# Squash messy commits\ngit rebase -i HEAD~3\n# Pick meaningful commit messages\nfeat: implement user authentication\nfix: handle null email addresses\ntest: add unit tests for auth\n```\n\n### Before Submitting\n- Self-review your code\n- Run tests and linters\n- Update documentation\n- Add/remove code comments as needed\n\n## Common Pitfalls to Avoid\n\n- **Don't**: Submit PRs with \"WIP\" or unclear titles\n- **Don't**: Mix refactoring with feature changes\n- **Don't**: Leave commented-out code without explanation\n- **Don't**: Force push after review starts (unless necessary)\n\n## Reviewer Checklist\n\nHelp reviewers by:\n- Tagging relevant reviewers\n- Using labels (bug, enhancement, breaking-change)\n- Keeping PR scope small\n- Responding to feedback promptly"
+        }
+      ],
+      "channels": {
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 91248.595156376, \"end_time\": 91250.801368438, \"duration_ms\": 2206.21}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"input_tokens\": 1474, \"output_tokens\": 488, \"total_tokens\": 1962, \"timestamp\": 1769091700.4872684, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1280, \"total_cache_tokens\": 1280, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 1962, \"effective_input_tokens\": 194, \"display_input_tokens\": 1474}, \"raw_usage\": {\"completion_tokens\": 488, \"prompt_tokens\": 1474, \"total_tokens\": 1962, \"completion_tokens_details\": null, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 1280}, \"queue_time\": 0.002452243, \"prompt_time\": 0.030832223, \"completion_time\": 1.806664069, \"total_time\": 1.837496292}, \"summary\": {\"model\": \"moonshotai/Kimi-K2-Instruct-0905\", \"turn_count\": 1, \"cumulative_input_tokens\": 1474, \"cumulative_output_tokens\": 488, \"cumulative_billing_tokens\": 1962, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 1962, \"context_window_size\": 262144, \"context_usage_percentage\": 0.748443603515625, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1280, \"cache_hit_rate_percent\": 46.477850399419026, \"cumulative_effective_input_tokens\": 194}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

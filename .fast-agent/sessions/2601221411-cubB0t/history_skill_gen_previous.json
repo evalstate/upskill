@@ -1,0 +1,45 @@
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Create a skill document that teaches an AI agent how to: write a good pr"
+        }
+      ],
+      "is_template": false
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "---\nname: write-pull-requests\ndescription: Explain how to draft clear, informative Pull Request descriptions that streamline the code review process.\n---\n\n# Writing Effective Pull Requests\n\n## Overview\n\nA well-written Pull Request (PR) is a communication tool, not just a code delivery mechanism. It provides context to reviewers, explains the reasoning behind changes, and speeds up the merging process.\n\n## Structure of a Good PR\n\nEvery PR description should answer three key questions:\n1. **What** changed? (High-level summary)\n2. **Why** did it change? (Motivation or link to issue)\n3. **How** was it verified? (Testing evidence)\n\nUse clear headings to separate these sections.\n\n## Examples\n\n### Feature Implementation\n```markdown\n## Summary\nImplements the new dark mode toggle for user settings.\n\n## Changes\n- Added `ThemeContext` to manage state globally.\n- Updated all UI components to respect the theme variable.\n- Added persistency to localStorage.\n\n## Testing\n- Manually tested toggling between light/dark modes.\n- Verified state persists across page reloads.\n- Checked contrast ratios for accessibility.\n\nCloses #142\n```\n\n### Bug Fix\n```markdown\n## Summary\nFixes memory leak in the data fetcher hook.\n\n## Root Cause\nThe `AbortController` was not being triggered on unmount, \nleaving event listeners active.\n\n## Fix\n- Moved controller instantiation inside `useEffect`.\n- Added cleanup function to abort requests on unmount.\n\n## Testing\n- Verified Chrome DevTools shows no detached DOM nodes after navigation.\n- Added unit test for unmount behavior.\n\nFixes #88\n```\n\n## Best Practices\n\n- **Keep PRs small:** Aim for a focused, single logical change.\n- **Reference issues:** Always link related tickets using `Closes #ID` or `Refs #ID`.\n- **Visuals:** If the change affects UI, include screenshots or screen recordings.\n- **Context:** Don't just list files; explain the architectural decision.\n- **Checklists:** Include a list (e.g., \"Tests added\", \"Docs updated\") to ensure completion."
+        }
+      ],
+      "channels": {
+        "reasoning": [
+          {
+            "type": "text",
+            "text": "1.  **Analyze the Request:**\n    *   **Task:** Create a skill document on how to \"write a good pr\" (Pull Request).\n    *   **Target Audience:** AI coding agents.\n    *   **Goal:** Provide clear instructions, examples, and best practices for creating high-quality Pull Requests.\n    *   **Output Constraints:** Markdown with frontmatter (name, description), 200-400 words in the body, practical examples, specific format.\n\n2.  **Drafting the Frontmatter:**\n    *   *name:* Needs to be lowercase, hyphenated. Something like `pull-request-description` or `write-pr`. Let's go with `write-pull-requests`.\n    *   *description:* Needs to be under 100 chars, one sentence. \"Teaches how to write effective Pull Request descriptions and manage review process.\"\n\n3.  **Drafting the Body Content:**\n    *   *Overview:* What makes a PR good? Clear context, testing evidence, and description of changes.\n    *   *Structure:* A standard PR template usually includes: Summary, Type of change, Testing, Screenshots (if UI), Checklist.\n    *   *Key Principles/Benefits:* Helps reviewers, speeds up merging, documents history.\n    *   *Examples:*\n        *   Example 1: A standard feature PR.\n        *   Example 2: A bug fix PR.\n    *   *Best Practices:* Small focused PRs, referencing tickets, linking design docs.\n\n4.  **Refining the Content (Iterative drafting):**\n\n    *   *Overview:* Writing a good PR is about communication, not just code. It helps reviewers understand the \"why\" and \"how.\"\n *   *Structure:* Use sections like \"What changed?\" and \"Why?\" and \"Testing.\"\n    *   *Example 1 (Feature):*\n        ```markdown        ## Summary\n        Adds user authentication via OAuth.\n\n ## Changes\n        - Integrated Google OAuth provider\n - Added login button to navbar\n\n ## Testing\n        Manual testing verified login flow works correctly.\n        ```\n    *   *Example 2 (Bug Fix):*\n        ```markdown\n        ## Summary\n        Fixes race condition in the payment queue.\n\n        ## Root Cause The lock was released before the transaction committed.\n\n        ## Testing\n        Added unit test `test_payment_concurrency`.\n        ```\n    *   *Best Practices:* Keep PRs small. One logical change per PR. Link relevant issues. Don't say \"Fixes stuff.\" Be specific.\n\n5.  **Reviewing Constraints:**\n    *   *Word count check:* The draft looks good, well within the200-400 word range.\n    *   *Format:* Markdown with frontmatter.\n    *   *No extra text:* Just the document.\n\n6.  **Final Polish:** Ensure the tone is instructional for an AI agent.\n\n    *   *Name:* `write-pull-requests`\n    *   *Description:* Explain how to draft clear, informative Pull Request descriptions that streamline the code review process.\n\n    *(Self-Correction during drafting)*: Make sure to emphasize the *linking* of issues and the *testing* section, as those are crucial for agents to include.\n\n7.  **Final Output Generation:** Constructing the final markdown block."
+          }
+        ],
+        "fast-agent-timing": [
+          {
+            "type": "text",
+            "text": "{\"start_time\": 90667.537615469, \"end_time\": 90670.281384046, \"duration_ms\": 2743.77}"
+          }
+        ],
+        "fast-agent-usage": [
+          {
+            "type": "text",
+            "text": "{\"turn\": {\"provider\": \"openai\", \"model\": \"zai-org/GLM-4.7\", \"input_tokens\": 1485, \"output_tokens\": 1126, \"total_tokens\": 2611, \"timestamp\": 1769091105.9917834, \"cache_usage\": {\"cache_read_tokens\": 0, \"cache_write_tokens\": 0, \"cache_hit_tokens\": 1160, \"total_cache_tokens\": 1160, \"has_cache_activity\": true}, \"tool_use_tokens\": 0, \"reasoning_tokens\": 0, \"tool_calls\": 0, \"current_context_tokens\": 2611, \"effective_input_tokens\": 325, \"display_input_tokens\": 1485}, \"raw_usage\": {\"completion_tokens\": 1126, \"prompt_tokens\": 1485, \"total_tokens\": 2611, \"completion_tokens_details\": {\"accepted_prediction_tokens\": 0, \"audio_tokens\": null, \"reasoning_tokens\": null, \"rejected_prediction_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": null, \"cached_tokens\": 1160}}, \"summary\": {\"model\": \"zai-org/GLM-4.7\", \"turn_count\": 1, \"cumulative_input_tokens\": 1485, \"cumulative_output_tokens\": 1126, \"cumulative_billing_tokens\": 2611, \"cumulative_tool_use_tokens\": 0, \"cumulative_reasoning_tokens\": 0, \"cumulative_tool_calls\": 0, \"current_context_tokens\": 2611, \"context_window_size\": 202752, \"context_usage_percentage\": 1.28778014520202, \"cumulative_cache_read_tokens\": 0, \"cumulative_cache_write_tokens\": 0, \"cumulative_cache_hit_tokens\": 1160, \"cache_hit_rate_percent\": 43.85633270321361, \"cumulative_effective_input_tokens\": 325}}"
+          }
+        ]
+      },
+      "stop_reason": "endTurn",
+      "is_template": false
+    }
+  ]
+}

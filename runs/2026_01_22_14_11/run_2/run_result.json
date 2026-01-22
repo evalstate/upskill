@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "model": "glm",
+    "task": "write a good pr",
+    "batch_id": "2026_01_22_14_11",
+    "run_number": 2,
+    "timestamp": "2026-01-22T14:12:11.569933"
+  },
+  "stats": {
+    "conversation_span_ms": 47445.350000000006,
+    "llm_time_ms": 47439.939999999995,
+    "tool_time_ms": 5.4100000000034925,
+    "turns": 5,
+    "tool_calls": 10,
+    "tool_errors": 0,
+    "mcp_calls": 0,
+    "execute_calls": 10,
+    "tool_call_map": {
+      "read_skill": 10
+    },
+    "tool_error_map": {},
+    "input_tokens": 19426,
+    "output_tokens": 4072,
+    "total_tokens": 23498,
+    "usage_summaries": [
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 975,
+        "cumulative_output_tokens": 178,
+        "cumulative_billing_tokens": 1153,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1153,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5765,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 975
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 3878,
+        "cumulative_output_tokens": 817,
+        "cumulative_billing_tokens": 4695,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 3542,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.771,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 3878
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 980,
+        "cumulative_output_tokens": 166,
+        "cumulative_billing_tokens": 1146,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1146,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.573,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 980
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 3888,
+        "cumulative_output_tokens": 698,
+        "cumulative_billing_tokens": 4586,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 3440,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.72,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 3888
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 980,
+        "cumulative_output_tokens": 178,
+        "cumulative_billing_tokens": 1158,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1158,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.579,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 980
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 3888,
+        "cumulative_output_tokens": 896,
+        "cumulative_billing_tokens": 4784,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 3626,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.813,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 3888
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 976,
+        "cumulative_output_tokens": 178,
+        "cumulative_billing_tokens": 1154,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1154,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.577,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 976
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 3880,
+        "cumulative_output_tokens": 711,
+        "cumulative_billing_tokens": 4591,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 3437,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.7185,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 3880
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 1,
+        "cumulative_input_tokens": 982,
+        "cumulative_output_tokens": 174,
+        "cumulative_billing_tokens": 1156,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 1156,
+        "context_window_size": 200000,
+        "context_usage_percentage": 0.5780000000000001,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 982
+      },
+      {
+        "model": "claude-haiku-4-5",
+        "turn_count": 2,
+        "cumulative_input_tokens": 3892,
+        "cumulative_output_tokens": 950,
+        "cumulative_billing_tokens": 4842,
+        "cumulative_tool_use_tokens": 0,
+        "cumulative_reasoning_tokens": 0,
+        "cumulative_tool_calls": 2,
+        "current_context_tokens": 3686,
+        "context_window_size": 200000,
+        "context_usage_percentage": 1.8429999999999997,
+        "cumulative_cache_read_tokens": 0,
+        "cumulative_cache_write_tokens": 0,
+        "cumulative_cache_hit_tokens": 0,
+        "cache_hit_rate_percent": 0.0,
+        "cumulative_effective_input_tokens": 3892
+      }
+    ],
+    "timing_summaries": [
+      {
+        "start_time": 90674.629882327,
+        "end_time": 90677.203337636,
+        "duration_ms": 2573.46
+      },
+      {
+        "start_time": 90677.204917599,
+        "end_time": 90683.473668578,
+        "duration_ms": 6268.75
+      },
+      {
+        "start_time": 90674.644864886,
+        "end_time": 90677.165900129,
+        "duration_ms": 2521.04
+      },
+      {
+        "start_time": 90677.166767666,
+        "end_time": 90683.409623598,
+        "duration_ms": 6242.86
+      },
+      {
+        "start_time": 90674.659545276,
+        "end_time": 90677.125102607,
+        "duration_ms": 2465.56
+      },
+      {
+        "start_time": 90677.1259637,
+        "end_time": 90685.505933492,
+        "duration_ms": 8379.97
+      },
+      {
+        "start_time": 90674.673897942,
+        "end_time": 90677.842423652,
+        "duration_ms": 3168.53
+      },
+      {
+        "start_time": 90677.8435709,
+        "end_time": 90683.342855177,
+        "duration_ms": 5499.28
+      },
+      {
+        "start_time": 90674.68850619,
+        "end_time": 90676.264698498,
+        "duration_ms": 1576.19
+      },
+      {
+        "start_time": 90676.26565715,
+        "end_time": 90685.009953366,
+        "duration_ms": 8744.3
+      }
+    ]
+  },
+  "passed": false,
+  "assertions_passed": 5,
+  "assertions_total": 5,
+  "error_message": null,
+  "session_id": null,
+  "session_history_file": null,
+  "run_type": "with_skill",
+  "skill_name": "write-pull-requests"
+}
